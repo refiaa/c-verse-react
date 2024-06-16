@@ -21,7 +21,7 @@ const ContactUs = () => {
     const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const formData = new FormData(event.currentTarget);
-        formData.append("access_key", "9be036d9-4a3f-4aa7-b967-c55e07df770a");
+        formData.append("access_key", "ACCESS_KEY_HERE");
 
         let timerInterval: NodeJS.Timeout;
 
