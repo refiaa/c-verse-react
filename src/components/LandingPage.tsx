@@ -12,8 +12,8 @@ const SocialMediaIcon = ({ icon: Icon, link }: { icon: IconType, link: string })
 );
 
 const LandingPage = () => (
-    <section id="home" className="min-h-screen flex items-center md:pt-28 md:px-40 justify-center md:justify-start">
-        <div className="text-center md:text-left">
+    <section id="home" className="landing-page-section min-h-screen flex items-center md:pt-28 md:px-40 justify-center md:justify-start relative overflow-hidden">
+        <div className="text-center md:text-left relative z-10">
             <h1 className="text-2xl font-bold leading-10 md:text-5xl md:leading-normal text-white">
                 <span className="md:text-6xl text-5xl">Hi there!<br /></span>
                 Welcome to <span className="text-highlight">C-VERSE</span>

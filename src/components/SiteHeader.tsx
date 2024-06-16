@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import { IoMenu, IoClose } from 'react-icons/io5';
 import logo from '../assets/icon.png';
 
@@ -29,7 +29,7 @@ const SiteHeader = () => {
                     <div className="ml-24 flex items-center">
                         <img src={logo} alt="CVERSE Logo" className="h-10 mr-2" />
                         <h4 className="font-bold text-4xl text-highlight">
-                            <span className="text-highlight">CVERSE</span>
+                            <span className="text-highlight font-STKaiti">CVERSE</span>
                         </h4>
                     </div>
                     <div className={`${sticky ? 'text-highlight' : ''} lg:block hidden pr-20 py-2 font-medium`}>
