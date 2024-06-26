@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Pagination, Autoplay } from 'swiper';
 import main1 from '../assets/main1.png';
 import main2 from '../assets/main2.png';
 import comment from '../assets/comment.png';
@@ -44,7 +45,7 @@ const Applications = () => {
                         autoplay={{ delay: 6000 }}
                         pagination={{ clickable: true }}
                         modules={[Pagination, Autoplay]}
-                        onSlideChange={(swiper: any) => setActiveIndex(swiper.realIndex)}
+                        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
                     >
                         {applications.map((app, i) => (
                             <SwiperSlide key={i}>
