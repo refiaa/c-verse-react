@@ -1,6 +1,6 @@
 import React from 'react';
 import Swal from 'sweetalert2';
-import { IoMail, IoCall, IoLocation } from 'react-icons/io5';
+import { IoMail, IoLocation } from 'react-icons/io5';
 
 const ContactInfo = ({ icon, text }: { icon: JSX.Element, text: string }) => (
     <div className='flex gap-3 w-fit items-center'>
