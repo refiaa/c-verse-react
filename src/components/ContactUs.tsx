@@ -13,8 +13,7 @@ const ContactInfo = ({ icon, text }: { icon: JSX.Element, text: string }) => (
 
 const contactInfo = [
     { icon: <IoMail />, text: 'gosh.cverse@gmail.com' },
-    { icon: <IoCall />, text: '080 0000 0000' },
-    { icon: <IoLocation />, text: '〒305-0031 茨城県つくば市吾妻2-5-1 つくば市産業振興センター' },
+    { icon: <IoLocation />, text: '〒305-0031 茨城県つくば市吾妻２丁目５番地１' },
 ];
 
 const ContactUs = () => {

@@ -4,13 +4,11 @@ import Vision from './Vision';
 
 const companyInfo = [
     { label: '商号', value: '株式会社Gosh' },
-    { label: '法人番号', value: '0000000000000' },
+    { label: '法人番号', value: '9050001054973' },
     { label: '代表者', value: '金侑輝' },
-    { label: '本店所在地', value: '〒305-0031茨城県つくば市吾妻2-5-1 つくば市産業振興センター（つくば駅より徒歩５分）' },
+    { label: '本店所在地', value: '〒305-0031 茨城県つくば市吾妻２丁目５番地１' },
     { label: '設立', value: '2024' },
-    { label: '資本金', value: '00000円' },
-    { label: '公告', value: '2024年00月00日' },
-    { label: '役員', value: '○○○' },
+    { label: '資本金', value: '10000円' },
     { label: 'メールアドレス', value: 'gosh.cverse@gmail.com' },
 ];
 
