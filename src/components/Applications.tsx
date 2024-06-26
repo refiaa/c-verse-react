@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination, Autoplay } from 'swiper/modules';
 import main1 from '../assets/main1.png';
 import main2 from '../assets/main2.png';
 import comment from '../assets/comment.png';
