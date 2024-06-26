@@ -24,12 +24,12 @@ const CompanyInfo = () => {
                         <div className='w-full'>
                             <table className="table-auto w-full mx-auto border-collapse border-spacing-0">
                                 <tbody>
-                                    {companyInfo.map(({ label, value }) => (
-                                        <tr key={label} className="border-none">
-                                            <td className="px-4 py-2 font-semibold text-left border-none text-highlight">{label}</td>
-                                            <td className="px-4 py-2 text-left border-none">{value}</td>
-                                        </tr>
-                                    ))}
+                                {companyInfo.map(({ label, value }) => (
+                                    <tr key={label} className="border-none">
+                                        <td className="px-4 py-2 font-semibold text-left border-none text-highlight">{label}</td>
+                                        <td className="px-4 py-2 text-left border-none">{value}</td>
+                                    </tr>
+                                ))}
                                 </tbody>
                             </table>
                         </div>

@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination, Autoplay } from 'swiper';
-import forex from '../assets/App_example1.png';
-import pin from '../assets/App_example2.png';
-import ip from '../assets/App_example3.png';
-import url from '../assets/App_example4.png';
-import pic from '../assets/App_example5.png';
+import { Pagination, Autoplay } from 'swiper/modules';
+import main1 from '../assets/main1.png';
+import main2 from '../assets/main2.png';
+import comment from '../assets/comment.png';
+import event1 from '../assets/event1.png';
+import event2 from '../assets/event2.png';
 
 const applications = [
-    { img: pin, name: "App_example1" },
-    { img: forex, name: "App_example2" },
-    { img: pic, name: "App_example3" },
-    { img: ip, name: "App_example4" },
-    { img: url, name: "App_example5" },
+    { img: main1, name: "メイン画面" },
+    { img: main2, name: "メディア" },
+    { img: comment, name: "コメント" },
+    { img: event1, name: "イベント情報" },
+    { img: event2, name: "イベント情報-アーティスト" },
 ];
 
 const ApplicationCard = ({ img, name, isActive }: { img: string, name: string, isActive: boolean }) => (
@@ -45,7 +45,7 @@ const Applications = () => {
                         autoplay={{ delay: 6000 }}
                         pagination={{ clickable: true }}
                         modules={[Pagination, Autoplay]}
-                        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+                        onSlideChange={(swiper: any) => setActiveIndex(swiper.realIndex)}
                     >
                         {applications.map((app, i) => (
                             <SwiperSlide key={i}>
