@@ -7,7 +7,7 @@ const companyInfo = [
     { label: '法人番号', value: '9050001054973' },
     { label: '代表者', value: '金侑輝' },
     { label: '本店所在地', value: '〒305-0031 茨城県つくば市吾妻２丁目５番地１' },
-    { label: '設立', value: '2024' },
+    { label: '設立', value: '2024年6月17日' },
     { label: '資本金', value: '10000円' },
     { label: 'メールアドレス', value: 'gosh.cverse@gmail.com' },
 ];
