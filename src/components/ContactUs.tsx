@@ -12,15 +12,15 @@ const ContactInfo = ({ icon, text }: { icon: JSX.Element, text: string }) => (
 );
 
 const contactInfo = [
-    { icon: <IoMail />, text: 'gosh.cverse@gmail.com' },
+    { icon: <IoMail />, text: 'contact@gosh-hiphop.com' },
     { icon: <IoLocation />, text: '〒305-0031 茨城県つくば市吾妻２丁目５番地１' },
 ];
 
 const ContactUs = () => {
     const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        const formData = new FormData(event.currentTarget);
-        formData.append("access_key", "ACCESS_KEY_HERE");
+        const formData = new FormData(event.target as HTMLFormElement);
+        formData.append("access_key", "5ad84b40-2574-4caf-96e7-79adf655e618");
 
         let timerInterval: NodeJS.Timeout;
 
@@ -32,7 +32,7 @@ const ContactUs = () => {
             const data = await response.json();
 
             if (data.success) {
-                event.currentTarget.reset();
+                (event.target as HTMLFormElement).reset();
                 Swal.fire({
                     title: "Thank You!",
                     html: "I'll get back to you soon.",
@@ -44,12 +44,22 @@ const ContactUs = () => {
                     }
                 });
             } else {
-                throw new Error("Submission failed");
+                console.log("Error", data);
+                Swal.fire({
+                    title: "Error!",
+                    html: data.message || "Failed, Please try again.",
+                    timer: 5000,
+                    timerProgressBar: true,
+                    icon: "error",
+                    willClose: () => {
+                        clearInterval(timerInterval);
+                    }
+                });
             }
         } catch (error) {
             Swal.fire({
                 title: "Error!",
-                html: "Failed, Please try again.",
+                html: "An unexpected error occurred. Please try again later.",
                 timer: 5000,
                 timerProgressBar: true,
                 icon: "error",
