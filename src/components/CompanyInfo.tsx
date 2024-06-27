@@ -9,7 +9,7 @@ const companyInfo = [
     { label: '本店所在地', value: '〒305-0031 茨城県つくば市吾妻２丁目５番地１' },
     { label: '設立', value: '2024年6月17日' },
     { label: '資本金', value: '10000円' },
-    { label: 'メールアドレス', value: 'gosh.cverse@gmail.com' },
+    { label: 'メールアドレス', value: 'contact@gosh-hiphop.com' },
 ];
 
 const CompanyInfo = () => {
