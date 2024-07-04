@@ -11,6 +11,7 @@ const SiteHeader = () => {
         { name: 'About', to: 'about' },
         { name: 'Vision', to: 'vision' },
         { name: 'Applications', to: 'applications' },
+        { name: 'News', to: 'company-news' },
         { name: 'Contact', to: 'contact' }
     ];
 

@@ -6,16 +6,18 @@ import Applications from './components/Applications';
 import ContactUs from './components/ContactUs';
 import SiteHeader from './components/SiteHeader';
 import Vision from './components/Vision';
+import CompanyNews from './components/CompanyNews';
 import SiteFooter from './components/SiteFooter';
 
 export const App = () => (
     <BrowserRouter>
         <SiteHeader />
         <Routes>
-            <Route path='/' element={<><LandingPage /><CompanyInfo /><Applications /><ContactUs /></>} />
+            <Route path='/' element={<><LandingPage /><CompanyInfo /><Applications /><Vision /><CompanyNews /><ContactUs /></>} />
             <Route path='/about' element={<CompanyInfo />} />
             <Route path='/vision' element={<Vision />} />
             <Route path='/applications' element={<Applications />} />
+            <Route path='/news' element={<CompanyNews />} />
             <Route path='/contacts' element={<ContactUs />} />
         </Routes>
         <SiteFooter />
