@@ -13,7 +13,14 @@ export const App = () => (
     <BrowserRouter>
         <SiteHeader />
         <Routes>
-            <Route path='/' element={<><LandingPage /><CompanyInfo /><Applications /><Vision /><CompanyNews /><ContactUs /></>} />
+            <Route path='/' element={<>
+                <LandingPage />
+                <CompanyInfo />
+                <Vision />
+                <Applications />
+                <CompanyNews />
+                <ContactUs />
+            </>} />
             <Route path='/about' element={<CompanyInfo />} />
             <Route path='/vision' element={<Vision />} />
             <Route path='/applications' element={<Applications />} />
